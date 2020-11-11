@@ -1,0 +1,88 @@
+// Header
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $amarelo;
+    z-index: 10;
+    height: 92px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    flex: 1;
+    height: 92px;
+
+    ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            a {
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                height: 100%;
+                position: relative;
+
+                display: flex;
+                align-items: center;
+
+                padding: 20px;
+
+                transition: all 0.4s;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 4px;
+                    z-index: 10;
+                    background-color: #fff;
+
+                    transition: all 0.4s;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+
+            a.active {
+                color: #fff;
+            }
+
+            a.active::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transform: scaleX(1);
+                height: 4px;
+                z-index: 10;
+                background-color: #fff;
+
+                transition: all 0.4s;
+            }
+        }
+
+    }
+}

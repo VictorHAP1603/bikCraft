@@ -1,0 +1,18 @@
+#quebra .container {
+    width: 100%;
+    height: 220px;
+    background: url("/img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quebra .quote-externo {
+    text-align: center;
+    max-width: 400px;
+}

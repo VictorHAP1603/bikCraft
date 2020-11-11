@@ -1,0 +1,125 @@
+// Estilos Gerais
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//#fec63e
+
+$amarelo: #fec63e;
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 3px solid $amarelo;
+    padding: 10px 30px;
+    color: $amarelo;
+    font-size: 14px;
+    line-height:20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+
+    transition: all .4s;
+}
+
+.btn:hover {
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.btn.btn-preto:hover {
+    color: #000;
+    border: 3px solid #000;
+
+}
+
+.subtitulo {
+    font-size:24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+} 
+
+.subtitulo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:#000;
+
+    margin: 10px auto;
+
+}
+
+// introduçao interna 
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: auto;
+    color: #fff;
+}
+
+.introducao-interna h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background: #fff;
+    margin: 14px auto 14px auto;
+}
+
+.subtitulo-interno {
+    font-size:24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+} 
+
+.subtitulo-interno::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:#000;
+
+    margin-top: 10px;
+}
+
+
+
+

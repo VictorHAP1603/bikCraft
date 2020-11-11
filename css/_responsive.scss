@@ -1,0 +1,279 @@
+
+
+// ESTILOS GERAIS
+
+@media (max-width: 767px) {
+    .introducao-interna{
+        margin-top: 20px;
+    }
+
+    .subtitulo-interno {
+        font-size: 18px;
+    }
+}
+
+
+
+// HEADER
+
+// estilo tablet
+
+// @media (min-width: 768px) and (max-width: 959px) {
+//     .header_menu {
+//     }
+// }
+
+// estilo smartphone
+
+@media (max-width: 767px) {
+    .header {
+        position: relative;
+        height: auto;
+        padding-bottom: 20px;
+        
+        .container {
+            flex-direction: column;
+
+            & > a {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 120px;
+                    padding-top: 30px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .header_menu {
+        height: auto;
+        ul {
+            
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+
+            li {
+                border: 3px solid #000;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+                transition: all 0.4s;
+
+                &:hover {
+                    border-color: #fff;
+                }
+
+                a {
+                    color: #000;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                    height: 100%;
+                    position: relative;
+
+                    display: flex;
+                    align-items: center;
+
+                    padding: 20px;
+
+                    transition: all 0.4s;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: none;
+                    }
+                }
+
+                a.active::after {
+                    content: "";
+                    display: none;
+                }
+            }
+
+            li.active {
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+
+
+// HOME
+
+// tablets 
+
+@media (min-width: 768px) and (max-width: 959px) {
+    // Qualidade
+
+    #qualidade::after {
+      content: "";
+      display: none;
+  }
+
+  .qualidade_lista {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+          padding: 0 20px;
+      }
+  }
+}
+
+// mobile
+
+@media (max-width: 767px) {
+
+  // Introducao
+
+  #introducao {
+      margin-top: 20px;
+      padding: 15px 0;
+      background: url("/img/bg-mobile.jpg") no-repeat center;
+  }
+
+  // Portifólio
+
+  .portifolio_lista li:last-child img {
+      height: 180px;
+  }
+
+  
+    // Qualidade
+
+    #qualidade::after {
+      content: "";
+      display: none;
+  }
+}
+
+
+
+
+//footer
+// tablets
+
+@media (min-width: 768px) and (max-width: 959px) {
+   
+   
+
+    .footer-1 {
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div + div {
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            &::after {
+                width: 100%;
+            }
+        }
+
+        .nossa-historia,
+        .contato-footer,
+        .redes-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nossa-historia p {
+            padding-right: 0;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        .redes-sociais {
+            padding: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+    }
+
+    .footer-2 {
+        background-color: $amarelo;
+        
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+}
+
+// mobile
+
+@media (max-width: 767px) {
+
+    .nossa-historia,
+    .contato-footer,
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-1 {
+        
+        h3 {
+            &::after {
+                width: 100%;
+            }
+        }
+
+        .nossa-historia p {
+            padding-right: 0;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        .redes-sociais {
+            padding: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+    }
+
+    .footer-2 {
+        background-color: $amarelo;
+        
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+}

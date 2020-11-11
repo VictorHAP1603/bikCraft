@@ -1,0 +1,54 @@
+// page-sobre
+
+.interna_sobre {
+    background: url('../img/bg-sobre.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.interna_sobre .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.missao-sobre {
+    padding-top: 60px;
+
+    p {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 1em;
+        padding-right: 60px;
+    }
+
+    ul li {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .foto-equipe {
+        padding-top: 20px;
+    }
+}   
+
+
+
+// tablets
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+}
+
+// mobile
+
+@media (max-width: 767px) {
+    .missao-sobre {
+        .foto-equipe img {
+            height: 150px;
+        }
+    }   
+}

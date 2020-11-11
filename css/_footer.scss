@@ -1,0 +1,72 @@
+.footer {
+    width: 100%;
+
+    .container {
+        padding: 20px 0;
+    }
+}
+
+.footer-1,
+.footer-2 {
+    width: 100%;
+}
+
+.footer-1 {
+    background-color: #000;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    h3 {
+        color: $amarelo;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: $amarelo;
+            margin: 10px 0;
+        }
+    }
+
+    .nossa-historia p {
+        padding-right: 60px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .contato-footer ul {
+        margin-top: 20px;
+
+        li + li {
+            margin-top: 10px;
+        }
+    }
+
+    .redes-sociais {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            border: 3px solid $amarelo;
+            border-radius: 5px;
+            padding: 10px;
+            transition: all 0.4s;
+
+            &:hover {
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.footer-2 {
+    background-color: $amarelo;
+
+    p {
+        font-size: 15px;
+    }
+
+}
