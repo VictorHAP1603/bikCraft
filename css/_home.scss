@@ -127,14 +127,15 @@
     background-color: $amarelo;
 }
 
-.portifolio_lista li img {
+.portifolio_lista div img {
     border-radius: 10px;
 }
 
-.portifolio_lista li:last-child {
+.portifolio_lista li div:last-child,
+.portifolio_lista div:last-child {
     margin-top: 20px;
 }
-
+    
 #portifolio .call p {
     color: #fff;
 }

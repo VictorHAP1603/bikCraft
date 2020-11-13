@@ -58,6 +58,10 @@
             &:hover {
                 border-color: #fff;
             }
+            
+            img:hover {
+                filter: saturate(10%);
+            }
         }
     }
 }
