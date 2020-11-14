@@ -2830,6 +2830,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .produtos_lista li p {
   padding: 10px 20px 20px 20px;
+  text-align: center;
 }
 
 .produtos_icone {
@@ -3185,7 +3186,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-color: #fec63e;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -3780,7 +3781,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .orcamento-contato .dados-orcamento .redes .redes-sociais {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -3862,7 +3863,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .orcamento-contato .dados-orcamento .redes .redes-sociais {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -3910,7 +3911,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
@@ -4047,7 +4048,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 20px 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
@@ -4098,7 +4099,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 20px 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
